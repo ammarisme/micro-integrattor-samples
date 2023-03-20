@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="QueryDoctorEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueryDoctorEP.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="QueryDoctorInboundEndpoint" groupId="com.example.inbound-endpoint" version="1.0.0" type="synapse/inbound-endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/inbound-endpoints/QueryDoctorInboundEndpoint.xml</file>
+    </artifact>
+    <artifact name="GrandOakEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GrandOakEP.xml</file>
+    </artifact>
+    <artifact name="ClemencyEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ClemencyEP.xml</file>
+    </artifact>
+    <artifact name="PineValleyEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PineValleyEP.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="HealthcareRouterAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareRouterAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareRouterAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareRouterAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareRouterAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareRouterAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="HealthcareTransformMessageAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareTransformMessageAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareTransformMessageAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareTransformMessageAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareTransformMessageAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareTransformMessageAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="HospitalServicesEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/HospitalServicesEP.xml</file>
+    </artifact>
+    <artifact name="HealthcareReuseMediationAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareReuseMediationAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareReuseMediationAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareReuseMediationAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareReuseMediationAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareReuseMediationAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="HospitalRoutingSeq" groupId="com.example.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/HospitalRoutingSeq.xml</file>
+    </artifact>
+    <artifact name="HealthcareStoreAndForwardAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareStoreAndForwardAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareStoreAndForwardAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareStoreAndForwardAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareStoreAndForwardAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareStoreAndForwardAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="HospitalServiceMessageStore" groupId="com.example.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/HospitalServiceMessageStore.xml</file>
+    </artifact>
+    <artifact name="HospitalServicesStoreAndForwardEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/HospitalServicesStoreAndForwardEP.xml</file>
+    </artifact>
+    <artifact name="HospitalServiceSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/HospitalServiceSequence.xml</file>
+    </artifact>
+    <artifact name="HospitalServiceMessageProcessor" groupId="com.example.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/HospitalServiceMessageProcessor.xml</file>
+    </artifact>
+</artifacts>

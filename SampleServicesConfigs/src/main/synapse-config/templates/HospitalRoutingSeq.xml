@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="HospitalRoutingSeq" xmlns="http://ws.apache.org/ns/synapse">
+    <sequence>
+        <log description="log" level="custom">
+            <property expression="fn:concat('Routing to ', get-property('Hospital'))&#xa;" name="message"/>
+        </log>
+        <property description="Set Hospital Variable&#xa;" name="uri.var.hospital&#xa;" scope="default" type="STRING" value="$func:sethospital"/>
+    </sequence>
+</template>

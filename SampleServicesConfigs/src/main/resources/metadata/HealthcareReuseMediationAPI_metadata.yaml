@@ -1,0 +1,11 @@
+---
+key: "HealthcareReuseMediationAPI-1.0.0"
+name : "HealthcareReuseMediationAPI"
+displayName : "HealthcareReuseMediationAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/healthcarereuse"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

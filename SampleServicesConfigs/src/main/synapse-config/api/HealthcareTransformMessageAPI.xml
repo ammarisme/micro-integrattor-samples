@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/healthcaretransform" name="HealthcareTransformMessageAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/categories/{category}/reserve">
+        <inSequence>
+            <property expression="json-eval($.hospital_id)" name="uri.var.hospital" scope="default" type="STRING"/>
+            <datamapper config="gov:datamapper/RequestMapping.dmc" inputSchema="gov:datamapper/RequestMapping_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/RequestMapping_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/RequestMapping_xsltStyleSheet.xml"/>
+            <call>
+                <endpoint key="HospitalServicesEP"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

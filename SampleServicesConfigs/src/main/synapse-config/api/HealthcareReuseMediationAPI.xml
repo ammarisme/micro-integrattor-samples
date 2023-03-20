@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/healthcarereuse" name="HealthcareReuseMediationNewAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST GET" uri-template="/categories/{category}/reserve">
+        <inSequence>
+            <property description="Get Hospital" name="Hospital" scope="default" type="STRING" value="json-eval($.hospital)"/>
+            <switch source="get-property('Hospital')">
+                <case regex="grand oak community hospital&#xa;">
+                    <call-template description="oak" target="HospitalRoutingSeq">
+                        <with-param name="sethospital" value="grandoaks"/>
+                    </call-template>
+                    <call>
+                        <endpoint key="GrandOakEP"/>
+                    </call>
+                </case>
+                <case regex="clemency medical center">
+                    <call-template description="clemency" target="HospitalRoutingSeq">
+                        <with-param name="sethospital" value="clemency"/>
+                    </call-template>
+                    <call>
+                        <endpoint key="ClemencyEP"/>
+                    </call>
+                </case>
+                <case regex="pine valley community hospital">
+                    <call-template description="pinevalley" target="HospitalRoutingSeq">
+                        <with-param name="sethospital" value="pinevalley"/>
+                    </call-template>
+                    <call>
+                        <endpoint key="PineValleyEP"/>
+                    </call>
+                </case>
+                <default/>
+            </switch>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

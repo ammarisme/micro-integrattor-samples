@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/healthcarestoreandforward" name="HealthcareStoreAndForwardAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/categories/{category}/reserve">
+        <inSequence>
+            <property name="uri.var.hospital" scope="default" type="STRING" value="json-eval($.hospital_id)"/>
+            <store description="Hospital Service Store&#xa;" messageStore="HospitalServiceMessageStore"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
